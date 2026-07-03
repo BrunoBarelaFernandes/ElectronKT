@@ -1,6 +1,6 @@
 # ElectronKT Bridge
 
-ElectronKT Bridge é uma biblioteca para **Kotlin/JVM** desenvolvida para simplificar a criação de aplicações desktop utilizando tecnologias Web através do **ElectronKT**.
+ElectronKT Bridge é um protótipo de uma biblioteca para **Kotlin/JVM** desenvolvida para simplificar a criação de aplicações desktop utilizando tecnologias Web através do **ElectronKT**.
 
 O objetivo da biblioteca é oferecer uma API simples e intuitiva para que aplicações Kotlin possam manipular interfaces HTML, CSS e JavaScript sem que o desenvolvedor precise implementar manualmente a comunicação entre o processo Kotlin e o Electron.
 
