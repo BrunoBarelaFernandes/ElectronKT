@@ -324,7 +324,7 @@ O foco da biblioteca é permitir que o desenvolvedor escreva a lógica da aplica
 
 
 
-#Download do ElectronKT
+# Download do ElectronKT
 
 O **ElectronKT Bridge** depende do **ElectronKT**, que é o motor responsável pela renderização da interface gráfica.
 
