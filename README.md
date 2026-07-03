@@ -324,5 +324,41 @@ O foco da biblioteca é permitir que o desenvolvedor escreva a lógica da aplica
 
 
 
+#Download do ElectronKT
+
+O **ElectronKT Bridge** depende do **ElectronKT**, que é o motor responsável pela renderização da interface gráfica.
+
+Por questões de distribuição, o ElectronKT **não acompanha** o arquivo `.jar` da biblioteca e deve ser baixado separadamente.
+
+> **Download da versão mais recente:**
+> **[📦 Baixar ElectronKT](https://drive.google.com/file/d/1OCs05nBLGLIQ_FlMEHlt0BLY_wnC_t3y/view?usp=sharing)**
+
+Após o download, extraia a pasta **ElectronKT** na raiz do seu projeto. A estrutura deverá ficar semelhante à seguinte:
+
+```text
+MeuProjeto/
+├── ElectronKT/
+│   ├── electronkt
+│   ├── resources/
+│   ├── public/
+│   └── ...
+├── libs/
+│   └── ElectronKT-1.0.jar
+├── src/
+└── build.gradle.kts
+```
+
+Na inicialização da aplicação, informe o caminho da pasta através do parâmetro `pastaElectron`:
+
+```kotlin
+ElectronBridge.start(
+    pastaElectron = File("ElectronKT"),
+    tela = "1200x700",
+    nomeApp = "Minha Aplicação",
+    iconeNome = "icon.png"
+)
+```
+
+> **Importante:** O parâmetro `pastaElectron` deve apontar para a pasta onde o ElectronKT foi extraído.
 
 
